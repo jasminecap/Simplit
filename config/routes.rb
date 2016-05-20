@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :snippets
+  resources :projects
   get 'page/index'
 
   resources :sessions, only: [:new, :create, :destroy]
