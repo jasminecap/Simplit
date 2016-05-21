@@ -14,11 +14,17 @@
  *= require_self
  */
 
-.navbar{
+.nav-wrapper{
   background-color: #00b8d4;
-  color: #1de9b6;
+
 }
 
-#logout{
+
+.brand-logo{
   color: #00b8d4
+  font-family: 'Poiret One';
+
+}
+body{
+  font-family: 'Poiret One';
 }
