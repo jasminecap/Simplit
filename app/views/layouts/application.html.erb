@@ -2,21 +2,36 @@
 <html>
 <head>
   <title>Simplit</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<div id="user_header">
-  <% if current_user %>
-    Logged in as <%= current_user.email %>
-    <%= link_to "Log Out", logout_path %>
-  <% else %>
-    <%= link_to "Sign Up", signup_path %> or
-    <%= link_to "Log In", login_path %>
-  <% end %>
-</div>
+<!-- Navbar -->
+<nav class="navbar">
+  <div id="nav-wrapper">
+    <ul class="right">
+      <!-- If User is logged in, display message "Welcome User"  -->
+      <li><% if current_user %>
+        Welcome <%= current_user.username %>!</li>
+        <li id="logout"><%= link_to "Log Out", logout_path %></li>
+        <% else %>
+        <li><%= link_to "Sign Up", signup_path %></li> or
+        <li><%= link_to "Log In", login_path %></li>
+        <% end %>
+      <ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
 
 <% flash.each do |key, value| %>
   <%= content_tag(:div, class: "alert alert-#{key}") do %>
