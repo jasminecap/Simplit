@@ -14,17 +14,17 @@
  *= require_self
  */
 
-.nav-wrapper{
-  background-color: #00b8d4;
+ .nav-wrapper{
+   background-color: #00b8d4;
 
-}
+ }
 
 
-.brand-logo{
-  color: #00b8d4
-  font-family: 'Poiret One';
+ .brand-logo{
+   color: #00b8d4
+   font-family: 'Poiret One';
 
-}
-body{
-  font-family: 'Poiret One';
-}
+ }
+ body{
+   font-family: 'Poiret One';
+ }
