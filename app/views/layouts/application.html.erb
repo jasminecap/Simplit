@@ -16,7 +16,7 @@
     <ul class="right">
       <!-- If User is logged in, display message "Welcome User"  -->
       <li><% if current_user %>
-        Welcome <%= current_user.username %>!</li>
+        Hello, <%= current_user.username %>!</li>
         <li id="logout"><%= link_to "Log Out", logout_path %></li>
         <% else %>
         <li><%= link_to "Sign Up", signup_path %></li> or
