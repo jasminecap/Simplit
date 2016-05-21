@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+
+  root 'page#index'
+
   resources :snippets
   resources :projects
-  get 'page/index'
 
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -9,7 +11,6 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  root 'page#index'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
