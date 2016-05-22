@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+gem 'ots'
+gem 'summarize'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -26,7 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'summarize', '~> 1.0', '>= 1.0.3'
+# gem 'summarize', '~> 1.0', '>= 1.0.3'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
