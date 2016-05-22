@@ -18,19 +18,18 @@
    background-color: #616161;
  }
 
+.brand-logo{
 
- .brand-logo{
-
-   font-family: 'Pompiere';
+font-family: 'Josefin Sans', sans-serif;
 }
 
 body{
-font-family: 'Pompiere';
+font-family: 'Josefin Sans';
 color: #00b8d4;
 
 }
+
 .page-footer{
-  background-color: #616161;
   display: flex;
   min-height: 40vh;
   flex-direction: column;
