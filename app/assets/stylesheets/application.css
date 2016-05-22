@@ -15,23 +15,24 @@
  */
 
  .nav-wrapper{
-   background-color: #00b8d4;
-
+   background-color: #616161;
  }
 
 
  .brand-logo{
-   color: #00b8d4
-   font-family: 'Poiret One';
+
+   font-family: 'Pompiere';
+}
+
+body{
+font-family: 'Pompiere';
+color: #00b8d4;
 
 }
-body{
-  font-family: 'Poiret One';
-}
 .page-footer{
-  background-color: #00b8d4;
+  background-color: #616161;
   display: flex;
-  min-height: 100vh;
+  min-height: 40vh;
   flex-direction: column;
 }
 
