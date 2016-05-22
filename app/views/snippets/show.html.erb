@@ -5,5 +5,10 @@
   <%= @snippet.title %>
 </p>
 
+<p>
+  <strong>Snip:</strong>
+  <%= @snippet.snip %>
+</p>
+
 <%= link_to 'Edit', edit_snippet_path(@snippet) %> |
 <%= link_to 'Back', snippets_path %>
