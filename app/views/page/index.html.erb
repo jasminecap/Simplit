@@ -1,39 +1,37 @@
 
-
-
-
+<div class="center-align">
 
 <!-- PARALLAX HOME PAGE -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <%= image_tag("brickwall.jpg") %>
+<div class="parallax-container">
+  <div class="parallax">
+    <%= image_tag("brickwall.jpg") %>
+  </div>
+</div>
+<div class="section transparent">
+  <div class="row container">
+    <h2 class="header">CUT TO IT</h2>
+  </div>
+</div>
+<div class="row container">
+  <!-- Textbox to use simplit  -->
+  <form class="col s8">
+    <div class="row container">
+      <div class="input-field col s10">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Use Simplit now!</label>
+      </div>
     </div>
-  </div>
-  <div class="section transparent">
-      <div class="row container">
-        <h2 class="header">CUT TO IT</h2>
-      </div>
-  </div>
-      <div class="row container">
-        <!-- Textbox to use simplit  -->
-        <form class="col s8">
-          <div class="row container">
-            <div class="input-field col s10">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Use Simplit now!</label>
-            </div>
-          </div>
-        </form>
-      </div>
+  </form>
+</div>
 
 
 
-      <!-- Submit button -->
-      <div class="snip-button">
-        <%= link_to new_snippet_path, class: "btn waves-effect waves-light cyan accent-4" do %>
-        <i class="fa fa-scissors"></i>
-        <% end %>
-      </div>
+<!-- Submit button -->
+<div class="snip-button">
+  <%= link_to new_snippet_path, class: "btn waves-effect waves-light cyan accent-4" do %>
+  <i class="fa fa-scissors"></i>
+  <% end %>
+</div>
 
-
-      <!-- End of container -->
+</div>
+<!-- End of alignment -->
