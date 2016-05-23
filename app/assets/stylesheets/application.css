@@ -15,7 +15,13 @@
  */
 
  .nav-wrapper{
+
    background-color: #616161;
+
+ }
+
+ .right li{
+   color: #616161;
  }
 
 .brand-logo{
@@ -31,11 +37,10 @@ color: #00b8d4;
 
 .page-footer{
   display: flex;
-  min-height: 40vh;
+  min-height: 30vh;
   flex-direction: column;
 }
 
 main {
-
   flex: 1 0 auto;
 }

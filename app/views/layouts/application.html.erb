@@ -7,24 +7,27 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
-  <!-- Link Materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <!-- Link Google Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
-  <!-- Link Google font option  -->
-    <!-- Body Font -->
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-      <!-- Link FontAwesome -->
-  <script src="https://use.fontawesome.com/aafe71de78.js"></script>
+    <!-- Link Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <!-- Link Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- Link Google font option  -->
+      <!-- Body Font -->
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <!-- Title font -->
+      <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+        <!-- Link FontAwesome -->
+    <script src="https://use.fontawesome.com/aafe71de78.js"></script>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
 </head>
 
 <body>
@@ -32,8 +35,15 @@
 
 <!-- Navbar -->
   <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo left">Simplit</a>
+    <div class="nav-wrapper white">
+      <!-- <a href="#" class="brand-logo left">Simplit</a> -->
+      <!-- <div class="simplit-logo">
+        <img class="responsive-img" src="imgs/logo.png">
+      </div> -->
+
+      <!-- Mobile hamburger -->
+      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
       <ul id="nav-mobile" class= "right">
         <!-- If User is logged in, display message "Welcome User"  -->
         <% if current_user %>
@@ -50,11 +60,6 @@
 
 
 
-
-
-
-
-
 <% flash.each do |key, value| %>
   <%= content_tag(:div, class: "alert alert-#{key}") do %>
     <p><%= value %></p>
@@ -64,7 +69,6 @@
 <%= yield %>
 
 <!-- FOOTER -->
-
 <footer class="page-footer grey darken-2">
   <div class="container">
     <div class="row">
@@ -73,7 +77,7 @@
   <div class="footer-copyright">
     <div class="container">
     © 2016 Copyright
-    <a class="grey-text text-lighten-4 right" href="#!">Contact Us</a>
+    <a class="grey-text text-lighten-4 right" href="#!">About Us</a>
     </div>
   </div>
 </footer>
