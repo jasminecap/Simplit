@@ -1,4 +1,4 @@
-// Place all the styles related to the Page controller here.
+/*// Place all the styles related to the Page controller here.*/
 /*// They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -9,4 +9,11 @@
 
 h3{
   font-family: 'Righteous';
+}
+
+.parallax-container {
+     height: 150px;
+   }
+.section{
+  
 }

@@ -7,7 +7,7 @@
     <%= image_tag("brickwall.jpg") %>
   </div>
 </div>
-<div class="section transparent">
+<div class="section">
   <div class="row container">
     <h2 class="header">CUT TO IT</h2>
   </div>
@@ -22,16 +22,25 @@
       </div>
     </div>
   </form>
-</div>
+  </div>
+  <!-- Submit button -->
+  <div class="snip-button">
+    <%= link_to new_snippet_path, class: "btn waves-effect waves-light cyan accent-4" do %>
+    <i class="fa fa-scissors"></i>
+    <% end %>
+  </div>
+
+<center>
+    <div class="parallax-container">
+      <div class="parallax">
+        <%= image_tag("brickwall.jpg") %>
+      </div>
+    </div> <br><br>
+</center>
 
 
 
-<!-- Submit button -->
-<div class="snip-button">
-  <%= link_to new_snippet_path, class: "btn waves-effect waves-light cyan accent-4" do %>
-  <i class="fa fa-scissors"></i>
-  <% end %>
-</div>
+
 
 </div>
 <!-- End of alignment -->
