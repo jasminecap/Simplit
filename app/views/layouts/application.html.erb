@@ -35,14 +35,11 @@
 
 <!-- Navbar -->
   <nav>
-    <div class="nav-wrapper white">
+    <div class="nav-wrapper">
       <!-- <a href="#" class="brand-logo left">Simplit</a> -->
-      <!-- <div class="simplit-logo">
-        <img class="responsive-img" src="imgs/logo.png">
-      </div> -->
+      <div class="simplit-logo">
+        <%= image_tag("simplitlogoresize.png", :alt => "logo") %>
 
-      <!-- Mobile hamburger -->
-      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
 
       <ul id="nav-mobile" class= "right">
         <!-- If User is logged in, display message "Welcome User"  -->
@@ -54,6 +51,7 @@
           <li><%= link_to "Log In", login_path%></li>
           <% end %>
       </ul>
+      </div>
     </div>
   </nav>
 
