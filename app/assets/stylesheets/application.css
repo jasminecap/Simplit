@@ -14,33 +14,48 @@
  *= require_self
  */
 
- .nav-wrapper{
+ /*.nav-wrapper{
 
    background-color: #616161;
 
+ }*/
+
+ nav{
+    background-color: rgba(192, 192, 192, 0.7);
+
  }
 
- .right li{
-   color: #616161;
+
+ nav ul li{
+   color: #00b8d4;
  }
 
-.brand-logo{
-
-font-family: 'Josefin Sans', sans-serif;
-}
-
+/*
 body{
-font-family: 'Josefin Sans';
-color: #00b8d4;
+  font-family: 'Josefin Sans';
+  color: #00b8d4;
 
+}*/
+
+
+
+body {
+    font-family: 'Josefin Sans';
+    color: #00b8d4;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
+main {
+    flex: 1 0 auto;
+}
+
 
 .page-footer{
-  display: flex;
-  min-height: 30vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
 }

@@ -18,6 +18,10 @@
       <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
         <!-- Link FontAwesome -->
     <script src="https://use.fontawesome.com/aafe71de78.js"></script>
+    <!-- Link Materialize stylesheet css files -->
+    <!-- <link href="<%# asset_path('materialize.css') %>" rel="stylesheet" type="text/css">
+    <link href="<%# asset_path('materialize.min.css') %>" rel="stylesheet" type="text/css">
+    <link href="<%# asset_path('style.css') %>" rel="stylesheet" type="text/css"> -->
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -33,17 +37,16 @@
 
 
   <!-- Navbar -->
-  <nav>
+  <nav class="navbar">
     <div class="nav-wrapper">
-      <!-- <a href="#" class="brand-logo left">Simplit</a> -->
       <div class="simplit-logo">
-        <%= image_tag("simplitlogoresize.png", :alt => "logo") %>
+        <%= link_to(image_tag("simplitlogoresize.png", :alt => "logo"), root_path) %>
 
 
       <ul id="nav-mobile" class= "right">
         <!-- If User is logged in, display message "Welcome User"  -->
         <% if current_user %>
-          <li>Hello, <%= current_user.username %>!</li>
+          <li>Hello, <%=current_user.username %>!</li>
           <li><%= link_to "Log Out", logout_path%></li>
           <% else %>
           <li><%= link_to "Sign Up", signup_path %></li>
@@ -70,7 +73,7 @@
 <%= yield %>
 
 <!-- FOOTER -->
-<footer class="page-footer grey darken-2">
+<footer class="page-footer" style="background-color: rgba(192, 192, 192, 0.7)">
   <div class="container">
     <div class="row">
     </div>
