@@ -41,9 +41,13 @@
                   <!-- THIS DOESNT WORK :( -->
                 <li>Hello, <%=current_user.username %>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
+                <li><%= link_to "My Projects", projects_path%></li>
+
                 <% else %>
                 <li><%= link_to "Sign Up", signup_path %></li>
                 <li><%= link_to "Log In", login_path%></li>
+                <li><%= link_to "Create Projects", projects_path%></li>
+
                 <% end %>
             </ul>
             <!-- Mobile side nav option -->
@@ -51,9 +55,13 @@
               <% if current_user %>
                 <li>Hello, <%=current_user.username %>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
+                <li><%= link_to "My Projects", projects_path%></li>
+
                 <% else %>
                 <li><%= link_to "Sign Up", signup_path %></li>
                 <li><%= link_to "Log In", login_path%></li>
+                <li><%= link_to "Create Projects", projects_path%></li>
+
                 <% end %>
               </ul>
 
