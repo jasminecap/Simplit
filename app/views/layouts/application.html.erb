@@ -38,6 +38,7 @@
             <ul class="right hide-on-med-and-down">
               <!-- If User is logged in, display message "Welcome User"  -->
               <% if current_user %>
+                  <!-- THIS DOESNT WORK :( -->
                 <li>Hello, <%=current_user.username %>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
                 <% else %>
@@ -45,7 +46,7 @@
                 <li><%= link_to "Log In", login_path%></li>
                 <% end %>
             </ul>
-
+            <!-- Mobile side nav option -->
               <ul class="side-nav right" id="mobile-demo">
               <% if current_user %>
                 <li>Hello, <%=current_user.username %>!</li>

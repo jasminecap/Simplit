@@ -3,6 +3,5 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 // <!--Import jQuery before materialize.js-->
 
-$(document).ready(function(){
-    $('.parallax').parallax();
-  });
+// mobile hamburger side nav
+$(".button-collapse").sideNav();
