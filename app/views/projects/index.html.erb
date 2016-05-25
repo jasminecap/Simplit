@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Projects</h1>
+<h1 class="center-align">Your Projects:</h1>
 
-<table>
+<table class="bordered center-align">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= project.name %></td>
         <td><%= project.description %></td>
-        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'View', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,8 @@
 
 <br>
 
-<%= link_to 'New Project', new_project_path %>
+<div class="btn-floating cyan accent-4 center-align">
+  <%= link_to new_project_path, class: "waves-effect waves-light" do %>
+  <i class="material-icons">add</i>
+<% end %>
+</div>

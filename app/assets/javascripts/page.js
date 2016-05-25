@@ -5,3 +5,7 @@
 
 // mobile hamburger side nav
 $(".button-collapse").sideNav();
+
+// auto resize for text area input
+$('#textarea1').val('New Text');
+$('#textarea1').trigger('autoresize');

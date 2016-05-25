@@ -12,9 +12,25 @@ h3{
 }
 
 
-body{
-  background-image: url("blackpaint.jpg");
-}
-.materialize-textarea{
+// body{
+//   background-image: url("blackpaint.jpg");
+// }
 
+// Text area text color
+// .materialize-textarea .textarea1{
+//   color: white;
+//
+// }
+
+
+div textarea.simplit-input{
+    background-color: rgba(192, 192, 192, 0.2);
+    border-radius: 25px;
+    width: 50%;
+    height: 100px;
+
+}
+
+input:focus, textarea:focus {
+    outline: none;
 }

@@ -34,6 +34,13 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+
+  /*background image responsive*/
+    background-image:url('blackshape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 main {
     flex: 1 0 auto;
@@ -41,7 +48,7 @@ main {
 
 
 .page-footer{
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
