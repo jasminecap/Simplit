@@ -14,34 +14,22 @@
  *= require_self
  */
 
- /*.nav-wrapper{
 
-   background-color: #616161;
-
- }*/
 
  nav{
-    background-color: rgba(192, 192, 192, 0.7);
+    background-color: rgba(192, 192, 192, 0.2);
 
  }
 
 
  nav ul li{
-   color: #00b8d4;
+   color: white;
  }
-
-/*
-body{
-  font-family: 'Josefin Sans';
-  color: #00b8d4;
-
-}*/
-
 
 
 body {
     font-family: 'Josefin Sans';
-    color: #00b8d4;
+    color: white;
 
     display: flex;
     min-height: 100vh;
