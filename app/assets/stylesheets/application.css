@@ -14,13 +14,9 @@
  *= require_self
  */
 
-
-
  nav{
     background-color: rgba(192, 192, 192, 0.2);
-
  }
-
 
  nav ul li{
    color: white;
@@ -42,10 +38,10 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
+
 main {
     flex: 1 0 auto;
 }
-
 
 .page-footer{
   position: fixed;
