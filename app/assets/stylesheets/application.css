@@ -21,7 +21,10 @@
  nav ul li{
    color: white;
  }
-
+.logo{
+  margin-top: 12px;
+  margin-left: 10px;
+}
 
 body {
     font-family: 'Josefin Sans';

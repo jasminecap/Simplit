@@ -37,13 +37,12 @@
 
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="nav-wrapper white-text">
-        &nbsp;&nbsp;<%= link_to(image_tag("simplitlogo2.png", :alt => "logo"), root_path) %>
-          <a href="#" data-activates="mobile-demo" class="button-collapse right white-text"><i class="material-icons">menu</i></a>
+    <div class="nav-wrapper">
+        <%= link_to(image_tag("simplitlogo2.png", :class => "logo", :alt => "logo"), root_path) %>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <!-- If User is logged in, display message "Welcome User"  -->
               <% if current_user %>
-                  <!-- THIS DOESNT WORK :( -->
                 <li>Hello, <%=current_user.username %>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
                 <li><%= link_to "My Projects", projects_path%></li>
@@ -51,7 +50,6 @@
                 <% else %>
                 <li><%= link_to "Sign Up", signup_path %></li>
                 <li><%= link_to "Log In", login_path%></li>
-                <li><%= link_to "Create Projects", projects_path%></li>
 
                 <% end %>
             </ul>
@@ -65,7 +63,6 @@
                 <% else %>
                 <li><%= link_to "Sign Up", signup_path %></li>
                 <li><%= link_to "Log In", login_path%></li>
-                <li><%= link_to "Create Projects", projects_path%></li>
 
                 <% end %>
             </ul>
@@ -93,11 +90,11 @@
     <div class="footer-copyright a">
       <div class="container">
         © 2016 Copyright by Simplit. All Rights Reserved.
-    <!-- <a class="grey-text text-lighten-4 right" href="#!">About Us</a> -->
-        <a class="twitter right white-text">
+    <a class=" white-text right" href="#!">About Us</a>
+        <!-- <a class="twitter right white-text">
           <i class="fa fa-twitter"></i></a>
             <a class="instagram right white-text">
-              <i class="fa fa-instagram"></i></a>
+              <i class="fa fa-instagram"></i></a> -->
       </div>
     </div>
 </footer>
