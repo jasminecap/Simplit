@@ -17,7 +17,7 @@ p{
 
 div textarea.simplit-input{
     background-color: rgba(192, 192, 192, 0.2);
-    border-radius: 25px;
+    border-radius: 35px;
     width: 50%;
     height: 100px;
     font-size: 20px;
@@ -26,4 +26,8 @@ div textarea.simplit-input{
 // No more ugly blue outline for simplit input box
 input:focus, textarea:focus {
     outline: none;
+}
+
+.btn.waves-effect{
+  border-radius: 25px;
 }
