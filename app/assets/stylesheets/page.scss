@@ -11,27 +11,15 @@ h3{
   font-family: 'Josefin Sans';
 }
 
-
-// body{
-//   background-image: url("blackpaint.jpg");
-// }
-
-// Text area text color
-// .materialize-textarea .textarea1{
-//   color: white;
-//
-// }
-
-
 div textarea.simplit-input{
     background-color: rgba(192, 192, 192, 0.2);
     border-radius: 25px;
     width: 50%;
     height: 100px;
     font-size: 20px;
-
 }
 
+// No more ugly blue outline for simplit input box
 input:focus, textarea:focus {
     outline: none;
 }
