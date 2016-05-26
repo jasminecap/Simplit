@@ -15,11 +15,7 @@
   </div>
 </div>
 
-<!-- Basic Textbox for simplit-input -->
-  <div class="row container center-align">
-    <textarea class="simplit-input col s12">
-    </textarea>
-  </div>
+
 
     <!-- Materialize Textbox to use simplit  -->
     <!-- <form class="col s12">
@@ -32,21 +28,18 @@
     </form>
   </div> -->
 
+  <!-- Basic Textbox for simplit-input -->
+  <div class="row container center-align">
+    <!-- <textarea class="simplit-input col s12">
+    </textarea> -->
+    <%= form_tag '/' do %>
+    <%= text_area_tag :user_input, @input, :class => "simplit-input col s12" %>
 
-  <!-- Submit button -->
-  <div class="snip-button">
-    <%= link_to new_snippet_path, class: "btn waves-effect waves-light cyan accent-4" do %>
-    <i class="fa fa-scissors"></i>
-    <% end %>
   </div>
 
-<!-- <center>
-    <div class="parallax-container">
-      <div class="parallax">
-        <%= image_tag("brickwall.jpg") %>
-      </div>
-    </div> <br><br>
-</center> -->
+  <%= button_tag "<i class='fa fa-scissors'></i>".html_safe, :class => "btn waves-effect waves-light cyan accent-4" %>
+
+  <% end %>
 
 
 </div>

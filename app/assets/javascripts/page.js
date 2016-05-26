@@ -9,3 +9,12 @@ $(".button-collapse").sideNav();
 // auto resize for text area input
 $('#textarea1').val('New Text');
 $('#textarea1').trigger('autoresize');
+
+$(document).ready(function(){
+  console.log('ready!');
+
+  $('.btn.waves-effect.waves-light').on('click', function(){
+    console.log('yass clicked muhfucka yass');
+    var input = $('.simplit-input').val() ;
+  })
+})

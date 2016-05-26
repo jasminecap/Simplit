@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
+  post '/' => 'page#user_input'
 
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
