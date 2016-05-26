@@ -1,27 +1,28 @@
-<h3 class="center">Log In</h3>
-<div class="row">
-
-  <%= form_tag sessions_path, class: 'col s12' do %>
-
+<br><br><br>
+  <h3 class="center">Log In</h3>
     <div class="row">
-      <div class="input-field col s12 white-text">
-        <i class="material-icons prefix">account_circle</i>
-        <%= label_tag :email %> <br>
-        <%= text_field_tag :email %>
-      </div>
 
-      <div class="input-field col s12 white-text">
-        <i class='material-icons prefix'>lock_outline</i>
-        <%= label_tag :password%> <br>
-        <%= password_field_tag :password %>
-      </div>
+      <%= form_tag sessions_path, class: 'col s12' do %>
 
-      <div class="actions center-align">
-        <button class="btn waves-effect waves-light cyan accent-4" type="submit" name="action" onclick="Materialize.toast('Logged in!', 4000, 'rounded')"> <!-- using 'toast' to send alert that user is logged in -->
-          <%= submit_tag "Log In" %>
-        </button>
-      </div>
+        <div class="row">
+          <div class="input-field col s12 white-text">
+            <i class="material-icons prefix">account_circle</i>
+            <%= label_tag :email %> <br>
+            <%= text_field_tag :email %>
+          </div>
+
+          <div class="input-field col s12 white-text">
+            <i class='material-icons prefix'>lock_outline</i>
+            <%= label_tag :password%> <br>
+            <%= password_field_tag :password %>
+          </div>
+
+          <div class="actions center-align">
+            <button class="btn waves-effect waves-light cyan accent-4" type="submit" name="action" onclick="Materialize.toast('Logged in!', 4000, 'rounded')"> <!-- using 'toast' to send alert that user is logged in -->
+              <%= submit_tag "Log In" %>
+            </button>
+          </div>
+        </div>
+
+      <% end %>
     </div>
-
-  <% end %>
-</div>
