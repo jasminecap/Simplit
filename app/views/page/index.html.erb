@@ -12,16 +12,14 @@
 
     <!-- Simplit description -->
       <p class="center-align">
-        Too long to read? Lets get to the point. Copy and paste your text below!
+        Too long to read? Let's get to the point. Copy and paste your text below!
       </p>
   <br>
 
 
 
-    <!-- Basic Textbox for simplit-input -->
+    <!-- Form that summarizes input on homepage -->
     <div class="row container center-align">
-      <!-- <textarea class="simplit-input col s12">
-      </textarea> -->
       <%= form_tag '/' do %>
       <%= text_area_tag :user_input, @input, :class => "simplit-input col s12" %>
     </div>

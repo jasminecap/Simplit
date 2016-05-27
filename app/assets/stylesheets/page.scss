@@ -11,15 +11,17 @@ h3{
   font-family: 'Josefin Sans';
 }
 
+// font size for small simplit description
 p{
   font-size: 18px;
 }
 
+// Makes text area transparent and fixes sizing/border
 div textarea.simplit-input{
     background-color: rgba(192, 192, 192, 0.2);
-    border-radius: 42px;
+    border-radius: 38px;
     width: 50%;
-    height: 100px;
+    height: 170px;
     font-size: 20px;
 }
 
@@ -28,6 +30,7 @@ input:focus, textarea:focus {
     outline: none;
 }
 
+// style button
 .btn.waves-effect{
-  border-radius: 25px;
+  border-radius: 20px;
 }
