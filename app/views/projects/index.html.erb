@@ -2,11 +2,11 @@
 
 <h1 class="center-align">Your Projects:</h1>
 
-<table class="bordered center-align">
+<table class="centered">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Description</th>
+      <th>Name:</th>
+      <th>Description:</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,11 +14,24 @@
   <tbody>
     <% @projects.each do |project| %>
       <tr>
-        <td><%= project.name %></td>
+        <td>
+          <%= link_to project.name, project, class:"white-text"  %>
+        </td>
+
         <td><%= project.description %></td>
-        <td><%= link_to 'View', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+        <div = class="edit-project">
+          <td><%= link_to edit_project_path( project) do %>
+              <i class="material-icons">mode_edit</i>
+          <% end %>
+          </td>
+        </div>
+        <div class="delete-project">
+          <td><%= link_to project, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="material-icons">delete</i> </td>
+            <%end%>
+        </div>
       </tr>
     <% end %>
   </tbody>
@@ -26,9 +39,9 @@
 
 <br>
 
-<div class="btn-floating cyan accent-4 center-align">
-  <%= link_to new_project_path, class: "waves-effect waves-light" do %>
-  <i class="material-icons">add</i>
-  <% end %>
-  
-</div>
+<!-- New project button -->
+    <div class="center-align">
+        <%= link_to new_project_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
+        <i class="material-icons">add</i>
+        <% end %>
+    </div>

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
-
+  # get 'projects/id/edit', to: 'projects#edit' as: 'edit project'
   post '/' => 'page#user_input'
 
   resources :users
