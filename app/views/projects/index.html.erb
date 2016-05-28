@@ -15,6 +15,7 @@
     <% @projects.each do |project| %>
       <tr>
         <td>
+          <i class="fa fa-folder-o"></i>
           <%= link_to project.name, snippets_path, class:"white-text"  %>
         </td>
 
@@ -40,7 +41,7 @@
 <br>
 
 <!-- New project button -->
-    <div class="right-align">
+    <div class="right">
         <%= link_to new_project_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
         <i class="material-icons">add</i>
         <% end %>
