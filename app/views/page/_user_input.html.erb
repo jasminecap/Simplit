@@ -4,8 +4,9 @@
   <%= text_area_tag :user_input, @input, :class => "simplit-input col s12", :id => "home-user-input-sum" %>
 
 <!-- This button triggers the summarization -->
-  <%= button_tag "<i class='fa fa-scissors'></i>".html_safe, :class => "btn waves-effect waves-light cyan accent-4 z-depth-4", :id => "home-user-input-btn", :remote => true %>
+  <%= button_tag "<i class='fa fa-scissors'></i>".html_safe, :class => "btn waves-effect waves-light cyan accent-4 z-depth-4 pair-buttons", :id => "home-user-input-btn", :remote => true %>
 
 <!-- This button copies the summarized content to the user's clipboard -->
-  <button class="btn waves-effect waves-light cyan accent-4 z-depth-4" id="copy-button" data-clipboard-target="#home-user-input-sum"><i class="material-icons">note_add</i></button>
+
+  <button class="btn waves-effect waves-light cyan accent-4 z-depth-4 pair-buttons" id="copy-button" data-clipboard-target="#home-user-input-sum"><i class="material-icons">note_add</i></button>
 <% end %>
