@@ -7,12 +7,14 @@
 $(".button-collapse").sideNav();
 
 // auto resize for text area input
-$('#textarea1').val('New Text');
-$('#textarea1').trigger('autoresize');
+// $('#textarea1').val('New Text');
+// $('#textarea1').trigger('autoresize');
 
+// Test to see if targeting correct document for jquery
 $(document).ready(function(){
   console.log('ready!');
 
+// target the textarea box on page/index page
   $('.btn.waves-effect.waves-light').on('click', function(){
     console.log('yass clicked muhfucka yass');
     var input = $('.simplit-input').val() ;
