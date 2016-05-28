@@ -7,7 +7,9 @@ class PageController < ApplicationController
     @input = params[:user_input] || Snippet.new
     if @input
       @input = @input.mb_chars.summarize
-      render  'page/index'
+      respond_to do |format|
+       format.js # new.js.erb
+      end
     end
   end
 end

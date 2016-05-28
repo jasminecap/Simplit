@@ -1,0 +1,6 @@
+<!-- This form summarizes user input on the home page -->
+<!-- This form gets refreshed with AJAX -->
+<%= form_tag('/', :id => "home-user-input-sum", :remote => true) do %>
+  <%= text_area_tag :user_input, @input, :class => "simplit-input col s12" %>
+  <%= button_tag "<i class='fa fa-scissors'></i>".html_safe, :class => "btn waves-effect waves-light cyan accent-4 z-depth-4", :id => "home-user-input-btn", :remote => true %>
+<% end %>

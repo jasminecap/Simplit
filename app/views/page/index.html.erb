@@ -18,18 +18,10 @@
 
 
 
-    <!-- Form that summarizes input on homepage -->
+    <!-- Partial that summarizes input on homepage -->
     <div class="row container center-align">
-      <%= form_tag '/' do %>
-      <%= text_area_tag :user_input, @input, :class => "simplit-input col s12" %>
+      <%= render "user_input" %>
     </div>
-
-    <br>
-
-    <%= button_tag "<i class='fa fa-scissors'></i>".html_safe, :class => "btn waves-effect waves-light cyan accent-4 z-depth-4" %>
-
-    <% end %>
-
 
 </div>
 <!-- End of alignment -->
