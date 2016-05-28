@@ -43,7 +43,7 @@
             <ul class="right hide-on-med-and-down">
               <!-- If User is logged in, display message "Welcome User"  -->
               <% if current_user %>
-                <li>Hello,&ensp;</li> 
+                <li>Hello,&ensp;</li>
                 <li class="username"><%=current_user.username%>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
                 <li><%= link_to "My Projects", projects_path%></li>
@@ -100,5 +100,6 @@
     </div>
 </footer>
 
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.10/clipboard.min.js"></script>
 </body>
 </html>

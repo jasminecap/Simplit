@@ -1,3 +1,10 @@
-$('#home-user-input-sum').html("<%= escape_javascript(render 'user_input', locals: {user_input: @input}) %>");
+// Using AJAX, this refreshes the user input text area
+// on the home page with the summarized verison
+
+$('#home-user-input-form').html("<%= escape_javascript(render 'user_input', locals: {user_input: @input}) %>");
 
 console.log("I changed");
+
+(function(){
+    new Clipboard('#copy-button');
+})();
