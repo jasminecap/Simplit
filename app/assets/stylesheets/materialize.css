@@ -2633,7 +2633,7 @@ table {
 
 td,
 th {
-  padding: 0;
+  padding: 20px;
 }
 
 html {
@@ -2986,18 +2986,18 @@ footer.page-footer .footer-copyright {
   background-color: rgba(51, 51, 51, 0.08);
 }
 
-table, th, td {
+table, thead, th, td {
   border: none;
 }
 
 table {
-  width: 100%;
+  width: 50%;
   display: table;
 }
 
 table.bordered > thead > tr,
 table.bordered > tbody > tr {
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 0px solid #d0d0d0;
 }
 
 table.striped > tbody > tr:nth-child(odd) {
@@ -3013,7 +3013,7 @@ table.highlight > tbody > tr {
 }
 
 table.highlight > tbody > tr:hover {
-  background-color: #f2f2f2;
+  background-color: rgba(192, 192, 192, 0.2);
 }
 
 table.centered thead tr th, table.centered tbody tr td {
@@ -3021,7 +3021,7 @@ table.centered thead tr th, table.centered tbody tr td {
 }
 
 thead {
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 0px;
 }
 
 td, th {
@@ -3034,7 +3034,7 @@ td, th {
 
 @media only screen and (max-width: 992px) {
   table.responsive-table {
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
     display: block;

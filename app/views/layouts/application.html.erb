@@ -43,7 +43,8 @@
             <ul class="right hide-on-med-and-down">
               <!-- If User is logged in, display message "Welcome User"  -->
               <% if current_user %>
-                <li>Hello, <%=current_user.username %>!</li>
+                <li>Hello,&ensp;</li> 
+                <li class="username"><%=current_user.username%>!</li>
                 <li><%= link_to "Log Out", logout_path%></li>
                 <li><%= link_to "My Projects", projects_path%></li>
 

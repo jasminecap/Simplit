@@ -26,6 +26,10 @@
   margin-left: 10px;
 }
 
+.username{
+  color: #00b8d4;
+}
+
 body {
     font-family: 'Josefin Sans';
     color: white;
