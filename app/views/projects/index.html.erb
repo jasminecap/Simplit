@@ -2,7 +2,7 @@
 
 <h1 class="center-align">Your Projects:</h1>
 
-<table class="highlight centered">
+<table class="centered">
   <thead>
     <tr>
       <th>Name:</th>
@@ -15,7 +15,7 @@
     <% @projects.each do |project| %>
       <tr>
         <td>
-          <%= link_to project.name, project, class:"white-text"  %>
+          <%= link_to project.name, snippets_path, class:"white-text"  %>
         </td>
 
         <td><%= project.description %></td>
@@ -40,7 +40,7 @@
 <br>
 
 <!-- New project button -->
-    <div class="center-align">
+    <div class="right-align">
         <%= link_to new_project_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
         <i class="material-icons">add</i>
         <% end %>
