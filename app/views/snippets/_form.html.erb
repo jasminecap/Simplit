@@ -11,15 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="input cols6 center-align">
     <%= f.label :title %><br>
     <%= f.text_area :title %>
   </div>
-  <div class="field">
+  <div class="input cols6 center-align">
     <%= f.label :snip %><br>
     <%= f.text_area :snip %>
   </div>
-  <div class="actions">
+
+  <div class="actions center-align">
+    <button class="btn waves-effect waves-light cyan accent-4" type="submit" name="action"><i class='fa fa-scissors'></i>
     <%= f.submit %>
+    </button>
   </div>
+
 <% end %>

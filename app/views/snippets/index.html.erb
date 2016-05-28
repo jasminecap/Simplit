@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Snippets</h1>
+<h3 class="center-align">Snippets:</h3>
 
 
 
@@ -18,14 +18,28 @@
       <tr>
         <td><%= snippet.title %></td>
         <td><%= snippet.snip.mb_chars.summarize(:ratio => 10) %></td>
-        <td><%= link_to 'Show', snippet %></td>
-        <td><%= link_to 'Edit', edit_snippet_path(snippet) %></td>
-        <td><%= link_to 'Destroy', snippet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div = class="edit-project">
+          <td><%= link_to edit_snippet_path(snippet) do %>
+              <i class="material-icons">mode_edit</i>
+          <% end %>
+          </td>
+        </div>
+        <div class="delete-snippet">
+          <td><%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <i class="material-icons">delete</i> </td>
+            <%end%>
+        </div>
       </tr>
     <% end %>
   </tbody>
-</table>
 
+</table>
 <br>
 
-<%= link_to 'New Snippet', new_snippet_path %>
+
+<!-- New snippet button -->
+    <div class="center-align">
+        <%= link_to new_snippet_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
+        <i class="material-icons">add</i>
+        <% end %>
+    </div>
