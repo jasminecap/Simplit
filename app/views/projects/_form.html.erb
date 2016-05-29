@@ -22,10 +22,12 @@
     <%= f.text_field :description %>
   </div>
 
-  <div class="center-align">
-    <button class="btn waves-effect waves-light cyan accent-4" type="submit" name="action">
-    <%= f.submit %>
-    </button>
+
+
+  <div class="actions center-align">
+    <%= button_tag( :class => "btn waves-effect waves-light cyan accent-4") do %>
+      <i class="material-icons">add</i>
+    <% end %>
   </div>
 
 <% end %>

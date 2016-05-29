@@ -6,12 +6,14 @@
   <% @snippets.each do |snippet| %>
     <li>
       <div class="collapsible-header"><%= snippet.title %>
-        <%= link_to edit_snippet_path(snippet) do %>
-            <i class="material-icons right">mode_edit</i>
-        <% end %>
         <%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
           <i class="material-icons right">delete</i> </td>
           <%end%>
+
+        <%= link_to edit_snippet_path(snippet) do %>
+            <i class="material-icons right">mode_edit</i>
+        <% end %>
+
       </div>
       <div class="collapsible-body"><p><%= snippet.snip.mb_chars.summarize %></p></div>
     </li>
