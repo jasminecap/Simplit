@@ -1,11 +1,13 @@
 <p id="notice"><%= notice %></p>
-
-<h3 class="center-align">Snippets:</h3>
+<h3 class="center-align">Snippets</h3>
 
 <ul class="collapsible" data-collapsible="accordion">
   <% @snippets.each do |snippet| %>
     <li>
-      <div class="collapsible-header"><%= snippet.title %>
+      <div class="collapsible-header">
+        <i class="fa fa-folder-open-o"></i>
+        <%= snippet.title %>
+
         <%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
           <i class="material-icons right">delete</i> </td>
           <%end%>
