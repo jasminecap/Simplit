@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="center-align">Your Projects:</h1>
+<h1 class="center-align">My Projects</h1>
 
 <table class="centered">
   <thead>
@@ -22,13 +22,11 @@
         <td><%= project.description %></td>
 
 
-        <div = class="edit-project">
+        <div = class="edit-delete-project">
           <td><%= link_to edit_project_path( project) do %>
               <i class="material-icons">mode_edit</i>
           <% end %>
           </td>
-        </div>
-        <div class="delete-project">
           <td><%= link_to project, method: :delete, data: { confirm: 'Are you sure?' } do %>
             <i class="material-icons">delete</i> </td>
             <%end%>

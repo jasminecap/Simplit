@@ -58,8 +58,9 @@
             <ul class="side-nav right" id="mobile-demo">
               <% if current_user %>
                 <li>Hello, <%=current_user.username %>!</li>
-                <li><%= link_to "Log Out", logout_path%></li>
                 <li><%= link_to "My Projects", projects_path%></li>
+                <li><%= link_to "Log Out", logout_path%></li>
+                
 
                 <% else %>
                 <li><%= link_to "Sign Up", signup_path %></li>
