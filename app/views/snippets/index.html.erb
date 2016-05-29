@@ -2,38 +2,23 @@
 
 <h3 class="center-align">Snippets:</h3>
 
+<ul class="collapsible" data-collapsible="accordion">
+  <% @snippets.each do |snippet| %>
+    <li>
+      <div class="collapsible-header"><%= snippet.title %>
+        <%= link_to edit_snippet_path(snippet) do %>
+            <i class="material-icons right">mode_edit</i>
+        <% end %>
+        <%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
+          <i class="material-icons right">delete</i> </td>
+          <%end%>
+      </div>
+      <div class="collapsible-body"><p><%= snippet.snip.mb_chars.summarize(:ratio => 10) %></p></div>
+    </li>
+  <% end %>
+</ul>
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Snip</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @snippets.each do |snippet| %>
-      <tr>
-        <td><%= snippet.title %></td>
-        <td><%= snippet.snip.mb_chars.summarize(:ratio => 10) %></td>
-        <div = class="edit-project">
-          <td><%= link_to edit_snippet_path(snippet) do %>
-              <i class="material-icons">mode_edit</i>
-          <% end %>
-          </td>
-        </div>
-        <div class="delete-snippet">
-          <td><%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <i class="material-icons">delete</i> </td>
-            <%end%>
-        </div>
-      </tr>
-    <% end %>
-  </tbody>
-
-</table>
 <br>
 
 
