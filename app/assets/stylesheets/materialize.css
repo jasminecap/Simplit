@@ -5522,7 +5522,7 @@ textarea.materialize-textarea {
   outline: none;
   height: 3rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 20px;
   margin: 0 0 15px 0;
   padding: 0;
   box-shadow: none;
@@ -5789,7 +5789,7 @@ textarea.materialize-textarea + label:after {
   position: absolute;
   top: 0.8rem;
   left: 0.75rem;
-  font-size: 1rem;
+  font-size: 20px;
   cursor: text;
   transition: .2s ease-out;
 }
@@ -5803,7 +5803,7 @@ textarea.materialize-textarea + label:after {
 .input-field .prefix {
   position: absolute;
   width: 3rem;
-  font-size: 2rem;
+  font-size: 15px;
   transition: color .2s;
 }
 
