@@ -14,8 +14,9 @@ $(".button-collapse").sideNav();
 $(document).ready(function(){
   console.log('ready!');
 
+
 // target the textarea box on page/index page
-  $('.btn.waves-effect.waves-light').on('click', function(){
+  $('#home-user-input-btn').on('click', function(){
     console.log('yass clicked muhfucka yass');
     var input = $('.simplit-input').val() ;
   })

@@ -35,6 +35,11 @@ input:focus, textarea:focus {
   border-radius: 20px;
 }
 
+#weird-ass-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 // pair button styling
 .pair-buttons{
   margin: 15px 5px;
