@@ -65,3 +65,14 @@ main {
   bottom: 0;
   padding: 1rem;
 }
+
+#copy-button{
+  position: relative;
+  top: -1.8em;
+  left: 4em;
+  margin-left: 1em;
+}
+
+#summary {
+  right: 3em;
+}
