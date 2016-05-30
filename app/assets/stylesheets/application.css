@@ -68,11 +68,15 @@ main {
 
 #copy-button{
   position: relative;
-  top: -1.8em;
+  top: -2.3em;
   left: 4em;
-  margin-left: 1em;
+  margin-top: 10px;
+  margin-left: -3em;
 }
 
 #summary {
-  right: 3em;
+  right: 4em;
+  margin-top: 14px;
+  margin-left: 3em;
+  
 }
