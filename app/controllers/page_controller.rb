@@ -6,7 +6,7 @@ class PageController < ApplicationController
   def user_input
     @input = params[:user_input] || Snippet.new
     if @input
-      @input = @input.mb_chars.summarize
+      @input = @input.mb_chars.summarize(:ratio => 5)
       respond_to do |format|
        format.js # new.js.erb
       end
