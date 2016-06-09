@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
+ .entire-page{
+   height: auto;
+ }
  nav{
     background-color: rgba(192, 192, 192, 0.2);
   }
@@ -34,11 +36,9 @@ body {
     font-family: 'Josefin Sans';
     color: white;
     font-size: 20px;
+    overflow: scroll;
 
 
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 
   /*background image responsive*/
     background-image:url('blackshape.jpg');
@@ -78,5 +78,5 @@ main {
   right: 4em;
   margin-top: 14px;
   margin-left: 3em;
-  
+
 }

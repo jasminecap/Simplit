@@ -2979,11 +2979,11 @@ footer.page-footer {
 }
 
 footer.page-footer .footer-copyright {
-  overflow: hidden;
+  overflow: auto;
   height: 50px;
   line-height: 50px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(51, 51, 51, 0.08);
+  color: rgba(192, 192, 192, 0.2);
+  background-color: rgba(192, 192, 192, 0.2);
 }
 
 table, thead, th, td {
