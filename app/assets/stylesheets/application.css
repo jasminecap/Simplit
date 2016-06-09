@@ -13,9 +13,7 @@
  *= require_tree .
  *= require_self
  */
- .entire-page{
-   height: auto;
- }
+
  nav{
     background-color: rgba(192, 192, 192, 0.2);
   }
@@ -58,12 +56,11 @@ main {
     flex: 1 0 auto;
 }
 
-.page-footer{
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
+#my-footer.page-footer{
+  margin: auto auto 0 auto;
+  align-self: flex-end;
   padding: 1rem;
+  width: 100%
 }
 
 #copy-button{
