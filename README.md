@@ -14,14 +14,15 @@ The second use for Simplit is project-based. Once you create an account, you can
 
 Simplit won't stop here! Keep checking back in for exciting improvements such as:
 
+```
   *Option to 'see full text'
   *Key words and phrases
   *Topic categories
   *Citations
-
+```
 
 
 
 ## About the Creators
 
-Simplit was created by [Jasmine Capote](https://www.linkedin.com/in/jasminecapote) and [Deanna Melin](https://www.linkedin.com/in/deannamelin)
+Simplit was created by [Jasmine Capote](https://www.linkedin.com/in/jasminecapote) and [Deanna Melin](https://www.linkedin.com/in/deannamelin) as a final project for [Wyncode Academy](http://wyncode.co/). Wyncode is a nine week, intensive, full-stack web development bootcamp where the creators of Simplit learned Ruby, Ruby on Rails, Javascript, HTML, and CSS.
