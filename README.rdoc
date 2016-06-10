@@ -1,4 +1,5 @@
-# ${1:Simplit}
+```
+#Simplit
 
 Simplit is a summarization tool designed to make research easier. Doing research can be very time consuming, and often requires reading through many more potential resources than will actually be used as a reference. Simplit is here to save you time while going through this process.
 
@@ -24,4 +25,6 @@ Simplit won't stop here! Keep checking back in for exciting improvements such as
 
 
 ## About the Creators
+
 Simplit was created by Jasmine Capote and Deanna Melin
+```
