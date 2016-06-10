@@ -1,29 +1,27 @@
-<h1>Simplit</h1>
-<br>
-<p>Simplit is a summarization tool designed to make research easier. Doing research can be very time consuming, and often requires reading through many more potential resources than will actually be used as a reference. Simplit is here to save you time while going through this process.</p>
+# ${1:Simplit}
 
-<hr>
+Simplit is a summarization tool designed to make research easier. Doing research can be very time consuming, and often requires reading through many more potential resources than will actually be used as a reference. Simplit is here to save you time while going through this process.
 
-<h2>How does Simplit make my life easier?</h2>
-<br>
-<p>Simplit can be used two ways. If all you need is a quick summarization, simply navigate to the home page, paste the text into the box, and click the scissors to create your 'snippet' (the summarized form of the text). Click the image of the clipboard and the snippet is automatically copied to your computer's clipboard.</p>
+## How does Simplit make my life easier?
 
-<p>The second use for Simplit is project-based. Once you create an account, you can create and save as many projects as you want. Within each project, you are able to create and store snippets (summarized versions of the text). This way you can easily keep various research projects well-organized.</p>
+Simplit can be used two ways. If all you need is a quick summarization, simply navigate to the home page, paste the text into the box, and click the scissors to create your 'snippet' (the summarized form of the text). Click the image of the clipboard and the snippet is automatically copied to your computer's clipboard.
 
-<hr>
+The second use for Simplit is project-based. Once you create an account, you can create and save as many projects as you want. Within each project, you are able to create and store snippets (summarized versions of the text). This way you can easily keep various research projects well-organized.
 
-<h2>Looking to the Future</h2>
-<br>
-<p>Simplit won't stop here! Keep checking back in for exciting improvements such as:
-  <ul>
-    <li>Option to 'see full text'</li>
-    <li>Key words and phrases</li>
-    <li>Topic categories</li>
-    <li>Citations</li>
-  </ul>
-</p>
 
-<hr>
 
-<h3>About the Creators</h3>
-<p>Simplit was created by <a href="https://www.linkedin.com/in/jasminecapote">Jasmine Capote</a> and <a href="https://www.linkedin.com/in/deannamelin"></a>Deanna Melin</p>
+## Looking to the Future
+
+Simplit won't stop here! Keep checking back in for exciting improvements such as:
+
+    Option to 'see full text'
+    Key words and phrases
+    Topic categories
+    Citations
+
+
+
+
+
+## About the Creators
+Simplit was created by Jasmine Capote and Deanna Melin
