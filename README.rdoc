@@ -1,28 +1,29 @@
-== README
+<h1>Simplit</h1>
+<br>
+<p>Simplit is a summarization tool designed to make research easier. Doing research can be very time consuming, and often requires reading through many more potential resources than will actually be used as a reference. Simplit is here to save you time while going through this process.</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<hr>
 
-Things you may want to cover:
+<h2>How does Simplit make my life easier?</h2>
+<br>
+<p>Simplit can be used two ways. If all you need is a quick summarization, simply navigate to the home page, paste the text into the box, and click the scissors to create your 'snippet' (the summarized form of the text). Click the image of the clipboard and the snippet is automatically copied to your computer's clipboard.</p>
 
-* Ruby version
+<p>The second use for Simplit is project-based. Once you create an account, you can create and save as many projects as you want. Within each project, you are able to create and store snippets (summarized versions of the text). This way you can easily keep various research projects well-organized.</p>
 
-* System dependencies
+<hr>
 
-* Configuration
+<h2>Looking to the Future</h2>
+<br>
+<p>Simplit won't stop here! Keep checking back in for exciting improvements such as:
+  <ul>
+    <li>Option to 'see full text'</li>
+    <li>Key words and phrases</li>
+    <li>Topic categories</li>
+    <li>Citations</li>
+  </ul>
+</p>
 
-* Database creation
+<hr>
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<h3>About the Creators</h3>
+<p>Simplit was created by <a href="https://www.linkedin.com/in/jasminecapote">Jasmine Capote</a> and <a href="https://www.linkedin.com/in/deannamelin"></a>Deanna Melin</p>
