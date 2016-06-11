@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 // target the textarea box on page/index page
   $('#home-user-input-btn').on('click', function(){
-    console.log('yass clicked muhfucka yass');
+    console.log('yass clicked yass');
     var input = $('.simplit-input').val() ;
   })
 })
