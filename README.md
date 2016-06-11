@@ -14,15 +14,19 @@ In your terminal, you will need to clone the repo:
 `https://github.com/jasminecap/Simplit.git`
 
 Once the repo has been cloned, you will need bundle, in order to make sure you have all of the necessary gems:
+
 `bundle install`
 
 After you bundle, you will need to migrate:
+
 `rake db:migrate`
 
 Once you have done this, you should be ready to run the application on on your localhost:3000 server. In your terminal, start up your server:
+
 `rails server`
 
 All that's left is to open a browser and navigate to:
+
 `localhost:3000`
 
 ## Looking to the Future
