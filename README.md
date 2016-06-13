@@ -29,6 +29,8 @@ All that's left is to open a browser and navigate to:
 
 `localhost:3000`
 
+NB: Our database is powered by PostgreSQL, so you will need to have PostgreSQL running in the background in order for the application to function. If you do not have the software, you can download it [here](https://www.postgresql.org/).
+
 ## Looking to the Future
 
 Simplit won't stop here! Keep checking back in for exciting improvements such as:
