@@ -11,7 +11,8 @@ The second use for Simplit is project-based. Once you create an account, you can
 ## Setup Instructions
 
 In your terminal, you will need to clone the repo:
-`https://github.com/jasminecap/Simplit.git`
+
+`git clone https://github.com/jasminecap/Simplit.git`
 
 Once the repo has been cloned, you will need bundle, in order to make sure you have all of the necessary gems:
 

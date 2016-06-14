@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'page#index'
 
+  resources :users
   resources :snippets
   resources :projects
 
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   # get 'projects/id/edit', to: 'projects#edit' as: 'edit project'
   post '/' => 'page#user_input'
 
-  resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
