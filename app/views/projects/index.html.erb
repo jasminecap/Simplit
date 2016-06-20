@@ -16,7 +16,7 @@
       <tr>
         <td>
           <i class="fa fa-folder-o"></i>
-          <%= link_to project.name, snippets_path, class:"white-text"  %>
+          <%= link_to project.name, project_snippets_path(project), class:"white-text"  %>
         </td>
 
         <td><%= project.description %></td>

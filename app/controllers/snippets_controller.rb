@@ -4,7 +4,7 @@ class SnippetsController < ApplicationController
   # GET /snippets
   # GET /snippets.json
   def index
-    @snippets = Snippet.all
+    @snippets = Snippet.where(project_id: params[:project_id])
   end
 
   # GET /snippets/1
@@ -14,21 +14,25 @@ class SnippetsController < ApplicationController
 
   # GET /snippets/new
   def new
-    @snippet = Snippet.new
+    @project = Project.find(params[:project_id])
+    @snippet = @project.snippets.build
   end
 
   # GET /snippets/1/edit
   def edit
+    @project = Project.find(params[:project_id])
+    @snippet = @project.snippets.find(params[:id])
   end
 
   # POST /snippets
   # POST /snippets.json
   def create
     @snippet = Snippet.new(snippet_params)
+    @snippet.project_id = params[:project_id]
 
     respond_to do |format|
       if @snippet.save
-        format.html { redirect_to snippets_url}
+        format.html { redirect_to project_path(@snippet.project_id)}
         format.json { render :show, status: :created, location: @snippet }
       else
         format.html { render :new }
@@ -42,7 +46,7 @@ class SnippetsController < ApplicationController
   def update
     respond_to do |format|
       if @snippet.update(snippet_params)
-        format.html { redirect_to snippets_url}
+        format.html { redirect_to project_snippets_path}
         format.json { render :show, status: :ok, location: @snippet }
       else
         format.html { render :edit }
@@ -56,7 +60,7 @@ class SnippetsController < ApplicationController
   def destroy
     @snippet.destroy
     respond_to do |format|
-      format.html { redirect_to snippets_url}
+      format.html { redirect_to project_snippets_path}
       format.json { head :no_content }
     end
   end
@@ -69,6 +73,6 @@ class SnippetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def snippet_params
-      params.require(:snippet).permit(:title, :snip)
+      params.require(:snippet).permit(:title, :snip, :project_id)
     end
 end

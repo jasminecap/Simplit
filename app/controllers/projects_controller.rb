@@ -28,7 +28,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html {redirect_to projects_path}
+        format.html {redirect_to @project}
         # format.html { redirect_to @project, notice: 'Project was successfully created.' }
         # format.json { render :show, status: :created, location: @project }
       else
@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html { redirect_to projects_path}
+        format.html { redirect_to @project}
         format.json { render :show, status: :ok, location: @project }
       else
         format.html { render :edit }

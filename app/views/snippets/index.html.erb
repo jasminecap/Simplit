@@ -8,11 +8,11 @@
         <i class="fa fa-folder-open-o"></i>
         <%= snippet.title %>
 
-        <%= link_to snippet, method: :delete, data: { confirm: 'Are you sure?' } do %>
+        <%= link_to project_snippet_path(snippet.project_id, snippet), method: :delete, data: { confirm: 'Are you sure?' } do %>
           <i class="material-icons right">delete</i> </td>
           <%end%>
 
-        <%= link_to edit_snippet_path(snippet) do %>
+        <%= link_to edit_project_snippet_path(params[:project_id], snippet) do %>
             <i class="material-icons right">mode_edit</i>
         <% end %>
 
@@ -28,7 +28,7 @@
 
 <!-- New snippet button -->
     <div class="center-align">
-        <%= link_to new_snippet_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
+        <%= link_to new_project_snippet_path, class: "btn-floating cyan accent-4 waves-effect waves-light" do %>
         <i class="material-icons">add</i>
         <% end %>
     </div>

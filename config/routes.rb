@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   root 'page#index'
 
   resources :users
-  resources :snippets
-  resources :projects
+
+  # nesting snippets inside projects
+  resources :projects do
+    resources :snippets
+  end
 
   resources :sessions, only: [:new, :create, :destroy]
 
