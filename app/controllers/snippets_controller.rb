@@ -32,7 +32,7 @@ class SnippetsController < ApplicationController
 
     respond_to do |format|
       if @snippet.save
-        format.html { redirect_to project_path(@snippet.project_id)}
+        format.html { redirect_to project_snippets_path(@snippet.project_id)}
         format.json { render :show, status: :created, location: @snippet }
       else
         format.html { render :new }
