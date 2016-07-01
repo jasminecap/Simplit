@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 # gems for summarization
+ruby "2.3.0"
 gem 'ots'
 gem 'summarize'
 gem 'hirb'
+gem "rails_12factor"
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
